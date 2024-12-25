@@ -1,0 +1,187 @@
+1 What are the Conditional Operators in Java?
+
+In Java, conditional operators are used to perform conditional operations, i.e., to make decisions based on certain conditions. The most commonly used conditional operator is the ternary operator (?:), which is a shorthand for an if-else statement.
+
+Ternary operator syntax:
+
+java
+Copy code
+condition ? expression1 : expression2;
+If condition is true, expression1 is executed; otherwise, expression2 is executed.
+
+Example:
+
+java
+Copy code
+int a = 10, b = 5;
+int result = (a > b) ? a : b;  // result will be 10 since a > b
+O< What are the types of operators based on the number of operands?
+
+Operators in Java can be classified based on the number of operands they work with:
+
+Unary Operators: Operate on a single operand. Examples:
++ (positive), - (negation), ++ (increment), -- (decrement), ! (logical NOT)
+Binary Operators: Operate on two operands. Examples:
+Arithmetic: +, -, *, /, %
+Relational: ==, !=, >, <, >=, <=
+Logical: &&, ||
+Assignment: =, +=, -=, *=, /=
+Ternary Operator: Operates on three operands. Example:
+condition ? expr1 : expr2
+2 What is the use of Switch case in Java programming?
+
+The switch statement is used to execute one out of multiple possible blocks of code based on the value of an expression. It is generally more efficient than multiple if-else statements when you need to compare a variable against many possible values.
+
+Example:
+
+java
+Copy code
+int day = 3;
+switch (day) {
+    case 1:
+        System.out.println("Monday");
+        break;
+    case 2:
+        System.out.println("Tuesday");
+        break;
+    case 3:
+        System.out.println("Wednesday");
+        break;
+    default:
+        System.out.println("Invalid day");
+}
+In this example, the program will print "Wednesday" because day is 3.
+
+3 What are the priority levels of arithmetic operations in Java?
+
+In Java, arithmetic operators have the following priority (from highest to lowest):
+
+Parentheses (): Operations inside parentheses are performed first.
+Unary operators: ++, --, + (positive), - (negation), ~ (bitwise NOT)
+Multiplication, Division, and Modulus: *, /, %
+Addition and Subtraction: +, -
+If operators of the same precedence level appear in an expression, they are evaluated from left to right (except for unary operators, which are evaluated from right to left).
+
+4 What are the conditional statements and the use of conditional statements in Java?
+
+Conditional statements allow you to control the flow of execution based on certain conditions. They are used to execute certain blocks of code depending on whether a condition is true or false.
+
+if statement: Executes a block of code if the condition is true.
+if-else statement: Executes one block of code if the condition is true, and another if it is false.
+else-if statement: Checks multiple conditions and executes code based on the first condition that is true.
+switch statement: Executes code based on the value of an expression (usually used for comparing a single variable to multiple values).
+Example of if-else statement:
+
+java
+Copy code
+int x = 10;
+if (x > 5) {
+    System.out.println("x is greater than 5");
+} else {
+    System.out.println("x is less than or equal to 5");
+}
+5 What is the syntax of the if-else statement?
+
+The if-else statement syntax in Java is:
+
+java
+Copy code
+if (condition) {
+    // Block of code if condition is true
+} else {
+    // Block of code if condition is false
+}
+Example:
+
+java
+Copy code
+int num = 10;
+if (num > 5) {
+    System.out.println("Number is greater than 5");
+} else {
+    System.out.println("Number is not greater than 5");
+}
+6 What are the 3 types of iterative statements in Java?
+
+The three types of iterative (looping) statements in Java are:
+
+for loop: Repeats a block of code a specific number of times.
+
+Syntax:
+java
+Copy code
+for (initialization; condition; increment/decrement) {
+    // Code to be executed
+}
+while loop: Repeats a block of code as long as the condition is true.
+
+Syntax:
+java
+Copy code
+while (condition) {
+    // Code to be executed
+}
+do-while loop: Similar to the while loop, but ensures that the code block is executed at least once, even if the condition is false.
+
+Syntax:
+java
+Copy code
+do {
+    // Code to be executed
+} while (condition);
+7 Write the difference between for loop and do-while loop?
+
+The difference between a for loop and a do-while loop:
+
+for loop: The condition is checked before the loop executes, so the block of code may not run at all if the condition is false initially.
+
+Example:
+java
+Copy code
+for (int i = 0; i < 5; i++) {
+    System.out.println(i); // This runs only if i < 5
+}
+do-while loop: The block of code inside the loop will run at least once because the condition is checked after the code is executed.
+
+Example:
+java
+Copy code
+int i = 0;
+do {
+    System.out.println(i); // This runs at least once
+    i++;
+} while (i < 5);
+8 Write a program to print numbers from 1 to 10.
+
+Here’s a simple Java program to print numbers from 1 to 10 using a for loop:
+
+java
+Copy code
+public class Main {
+    public static void main(String[] args) {
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(i);
+        }
+    }
+}
+Output:
+
+Copy code
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+This program uses the for loop to iterate from 1 to 10 and prints each number on a new line.
+
+
+
+
+
+
+
